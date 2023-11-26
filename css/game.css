@@ -1,0 +1,130 @@
+body{
+    background-color: azure;
+}
+
+#title{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: black;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: [col-start] 200px [line1] 200px [line2] 200px [line3] 200px [line4] 200px [col-end];
+    grid-template-rows: [top-line] 100px [second-line] 100px [third-line] 100px [fourth-line] 100px [bottom-line];
+    justify-content: center;
+    padding: 75px;
+}
+
+#picture{
+    grid-column-start: col-start;
+    grid-column-end: span col-end;
+    grid-row-start: top-line;
+    grid-row-end: span bottom-line;
+}
+
+#enterName{
+    grid-column-start: line2;
+    grid-column-end: span line3;
+    grid-row-start: top-line;
+    grid-row-end: span second-line;
+}
+
+#enterAdjective{
+    grid-column-start: line2;
+    grid-column-end: span line3;
+    grid-row-start: second-line;
+    grid-row-end: span third-line;
+
+}
+
+#enterTemperature{
+    grid-column-start: line2;
+    grid-column-end: span line3;
+    grid-row-start: third-line;
+    grid-row-end: span fourth-line;
+}
+
+#enterColor{
+    grid-column-start: line2;
+    grid-column-end: span line3;
+    grid-row-start: fourth-line;
+    grid-row-end: span bottom-line;
+}
+
+#enterAnimal{
+    grid-column-start: line3;
+    grid-column-end: span line4;
+    grid-row-start: top-line;
+    grid-row-end: span second-line;
+}
+
+#enterCelebrity{
+    grid-column-start: line3;
+    grid-column-end: span line4;
+    grid-row-start: second-line;
+    grid-row-end: span third-line;
+}
+
+#enterCountry{
+    grid-column-start: line3;
+    grid-column-end: span line4;
+    grid-row-start: third-line;
+    grid-row-end: span fourth-line;
+}
+
+#enterFood{
+    grid-column-start: line4;
+    grid-column-end: span col-end;
+    grid-row-start: top-line;
+    grid-row-end: span second-line;
+}
+
+#enterMonth{
+    grid-column-start: line4;
+    grid-column-end: span col-end;
+    grid-row-start: second-line;
+    grid-row-end: span third-line;
+}
+
+#enterSport{
+    grid-column-start: line4;
+    grid-column-end: span col-end;
+    grid-row-start: third-line;
+    grid-row-end: span fourth-line;
+}
+
+#showMadLib{
+    grid-column-start: line2;
+    grid-column-end: span line3;
+    grid-row-start: bottom-line;
+}
+
+#container2{
+    display: none;
+    grid-template-columns: [col-start] 200px [line1] 200px [line2] 200px [line3] 200px [col-end];
+    grid-template-rows: [top-line] 100px [second-line] 100px [third-line] 100px [bottom-line];
+    padding: 100px;
+}
+
+#picture2{
+    grid-column-start: col-start;
+    grid-column-end: span col-end;
+    grid-row-start: top-line;
+    grid-row-end: span bottom-line;
+}
+
+#theLib{
+    grid-column-start: line2;
+    grid-column-end: span col-end;
+    grid-row-start: top-line;
+    grid-row-end: span bottom-line;
+}
+
+#resetBtn{
+    grid-column-start: line2;
+    grid-column-end: span line3;
+    grid-row-start: bottom-line;
+}
